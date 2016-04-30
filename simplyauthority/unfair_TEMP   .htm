@@ -1,0 +1,141 @@
+<!-- saved from url=(0013)about:internet -->
+<style>body, table, { 
+            font: 18.6pt Arial; 
+            color: #000040;
+            background: #CCCCFF; 
+            margin: 50px; 
+            }
+
+input, textarea, select, submit  {
+            font: 18.6pt Arial; 
+            color: #004000;
+            margin-top: .33em}
+         
+input.radio, input.checkbox {
+            height:1em; width:1em}
+
+a, a:active, a:visited {color: #000040; text-decoration: underline}
+a:hover	{color: #004000}
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body onload='init();' style="overflow:hidden" > 
+Supervisor Feedback:
+
+<!--<div id="clock"></div>
+<div id="TimeLeft"></div>-->
+<!--<button id="toggleButton" value='play'>Play</button>-->
+
+<div id="box" >
+<div id="message">Your supervisor is reviewing your work...</div>
+<input id="userText" type="text" value="Enter text here"> 
+<button id="reply" >Reply</button>
+</div>
+<form name="continueForm" method="post">
+    </br></br><input id="continueSubmit" type="submit" name="feed1con1" value="Continue">
+</form>
+</body>
+<script>
+
+//Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals 
+var time = 120;
+var boxUp = -1;
+var boxDown = 1;
+//var elem = document.getElementById("box"), speed = 10, currentPos = 600;
+var motionInterval = false;
+var wait = false;
+var msgs = '';
+
+var msg1 = '</br>Supervisor: I don\'t know what you have been doing,';
+var msg2 = '</br>Supervisor: but you need to start focusing on completing the task at hand.';
+var msg3 = '</br> Automated Message: Your reply has been received.';
+//var boxOne = document.getElementById('box');
+
+
+	
+//INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT 
+function init()
+{
+
+//window.setInterval('updateClock()', 1000 );
+//window.setInterval('updateTimeLeft()', 1000 );
+//window.setTimeout('myFunction('+msg1+')', 3000);
+window.setTimeout(function() {
+		myFunction(msg1) 
+		}, 10000);
+
+window.setTimeout(function() {
+		myFunction(msg2) 
+		}, 15000);
+window.setTimeout(function() {
+		replybutton() 
+		}, 16000);
+}
+document.getElementById('reply').onclick = 
+	function()
+	{
+	var inputField = document.getElementById('userText');
+	var ui = inputField.value;
+	var messageSpace = document.getElementById('message');
+	msgs = msgs + '</br>Subject 1: ' + ui;
+	messageSpace.innerHTML = msgs;
+	ui = '';
+	inputField.value = '';
+	window.setTimeout(function() {
+		replyback(msg3) 
+		}, 2000);
+	}
+	
+// Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff 
+function updateClock()
+{
+var currentTime = new Date ( );
+var currentHours = currentTime.getHours ( );
+var currentMinutes = currentTime.getMinutes ( );
+var currentSeconds = currentTime.getSeconds ( );
+var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+currentMinutes = ( currentMinutes <10 ) ? "0" + currentMinutes  : currentMinutes;
+currentSeconds = ( currentSeconds <10 ) ? "0" + currentSeconds  : currentSeconds;
+
+var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+document.getElementById("clock").innerHTML = "Time: " + currentTimeString;
+}
+
+function updateTimeLeft()
+{
+document.getElementById("TimeLeft").innerHTML = "Time Left: " + time + ' Seconds';
+time=time-1;
+}
+
+//More Move function stuff More Move function stuff More Move function stuff More Move function stuff 
+function myFunction(m)
+{
+msgs = msgs + m;
+document.getElementById('message').innerHTML = msgs;
+/*if(wait==false && boxDown==1)
+	{
+	move();
+	}*/
+}
+function replybutton()
+{
+document.getElementById('userText').style.display = 'block';
+document.getElementById('reply').style.display = 'block';
+document.getElementById('continueSubmit').style.display = 'block';
+}
+function replyback(m) 
+{
+msgs = msgs + m;
+document.getElementById('message').innerHTML = msgs;
+}
+</script>
+
+
+
+
+
+
+
+
+

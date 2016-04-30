@@ -1,0 +1,188 @@
+<!-- saved from url=(0013)about:internet -->
+<style><ml.styles></style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body onload='init();' style="overflow:hidden" > 
+<ml.wording>
+<h2 style="text-align:center">Write your answer in the space provided below:</h2>
+  <form name="form" method="post">
+    <textarea id="answertext" cols="40" rows="20"  name="<ml.varname>"></textarea>
+    </br></br><input id="answerSubmit" type="submit" value="Submit">
+</form>
+<div id="clock"></div>
+<div id="TimeLeft"></div>
+<!--<button id="toggleButton" value='play'>Play</button>-->
+
+<div id="box" onmouseover="unHide()">
+<div id="message">No Messages</div>
+<input id="userText" type="text" value="Enter text here">
+<button  id="close">close</button>
+<button id="reply">Reply</button>
+
+</div>
+</body>
+<script>
+
+//Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals 
+var time = 120;
+var boxUp = -1;
+var boxDown = 1;
+var elem = document.getElementById("box"), speed = 10, currentPos = 600;
+var motionInterval = false;
+var wait = false;
+var msgs = '';
+
+var msg1 = '</br>Melinda: Could you please hurry up. You are really slow...';
+var msg2 = '</br>Melinda: Ok whatever just hurry please.';
+
+
+//Message Box Message Box Message Box Message Box Message Box Message Box Message Box Message Box Message Box 
+//message box
+var boxOne = document.getElementById('box');
+//play button for message box [0] is because it's the first child...or class?
+/*document.getElementById('toggleButton').onclick = 
+	function()
+	{
+	move()
+	}*/
+	
+document.getElementById('reply').onclick = 
+	function()
+	{
+	var inputField = document.getElementById('userText');
+	var ui = inputField.value;
+	var messageSpace = document.getElementById('message');
+	msgs = msgs + '</br>Subject 1: ' + ui;
+	messageSpace.innerHTML = msgs;
+	ui = '';
+	inputField.value = '';
+	}
+	
+document.getElementById('close').onclick = 
+	function()
+	{
+		boxOne.className='';
+		//then set the html of the toggle button to Play again
+		//document.getElementById('toggleButton').innerHTML = 'Play';
+
+		if(this.innerHTML === 'close')
+		{
+		this.innerHTML = 'close';
+		//boxOne.className='downTranslate';
+		move()
+		}
+		else
+		{
+		this.innerHTML = 'close';
+
+		}
+	}
+	
+//MOVE STUFF **** MOVE STUFF **** MOVE STUFF **** MOVE STUFF **** MOVE STUFF ****  MOVE STUFF **** MOVE STUFF **** 
+function move() {
+
+    // Reset the element
+    elem.style.top = currentPos+"px";
+    elem.style.bottom = "auto";
+	if(wait==false && boxDown==1)
+	//change color just to make it more clean
+	{//document.getElementById('messages').style.backgroundColor = 'white';
+	wait=true;
+	motionInterval = setInterval('moveUp()', 20)
+	//document.getElementById('message').style.backgroundColor = 'white';
+
+	}//if I add variables to moveUp it's like it doesn't register them
+	if(wait==false && boxDown==-1)					//so I had to make elem, currentPos and speed global variables.
+	//change color just to make it more clean
+	{//document.getElementById('messages').style.backgroundColor = 'black';
+	motionInterval = setInterval('moveDown()', 20)
+	//document.getElementById('message').style.backgroundColor = 'black';
+	}
+	
+}
+function moveUp()
+{       
+		currentPos -= speed;
+		wait = true;
+        if (currentPos <= 400) {
+			
+			boxUp*=-1;
+			boxDown*=-1;
+			clearInterval(motionInterval);
+			wait = false;
+			}
+		elem.style.top = currentPos+"px";
+}
+function moveDown()
+{		wait = true;
+		currentPos += speed;
+        if (currentPos >= 600) {
+			boxUp*=-1;
+			boxDown*=-1;
+			clearInterval(motionInterval);
+			wait = false;
+			}
+		elem.style.top = currentPos+"px";
+}
+
+//INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT 
+function init()
+{
+
+window.setInterval('updateClock()', 1000 );
+window.setInterval('updateTimeLeft()', 1000 );
+//window.setTimeout('myFunction('+msg1+')', 3000);
+window.setTimeout(function() {
+		myFunction(msg1) 
+		}, 3000);
+
+window.setTimeout(function() {
+		myFunction(msg2) 
+		}, 7000);
+}
+// Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff 
+function updateClock()
+{
+var currentTime = new Date ( );
+var currentHours = currentTime.getHours ( );
+var currentMinutes = currentTime.getMinutes ( );
+var currentSeconds = currentTime.getSeconds ( );
+var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+document.getElementById("clock").innerHTML = "Time :" + currentTimeString;
+}
+
+function updateTimeLeft()
+{
+document.getElementById("TimeLeft").innerHTML = "Time Left:" + time + ' Seconds';
+time=time-1;
+}
+
+//More Move function stuff More Move function stuff More Move function stuff More Move function stuff 
+function myFunction(m)
+{
+msgs = msgs + m;
+document.getElementById('message').innerHTML = msgs;
+if(wait==false && boxDown==1)
+	{
+	move();
+	}
+}
+function unHide()
+{
+if(wait==false && boxDown==1)
+	{
+	//document.getElementById('message').style.backgroundColor = 'white';
+	move();
+	}
+}
+</script>
+
+
+
+
+
+
+
+

@@ -1,0 +1,135 @@
+
+
+<!-- saved from url=(0013)about:internet -->
+<style>body, table, { 
+            font: 18.6pt Arial; 
+            color: #000040;
+            background: #CCCCFF; 
+            margin: 50px; 
+            }
+
+input, textarea, select, submit  {
+            font: 18.6pt Arial; 
+            color: #004000;
+            margin-top: .33em}
+         
+input.radio, input.checkbox {
+            height:1em; width:1em}
+
+a, a:active, a:visited {color: #000040; text-decoration: underline}
+a:hover	{color: #004000}
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body onload='init();' style="overflow:hidden" > 
+ 
+
+<!--<div id="clock"></div>
+<div id="TimeLeft"></div>
+<!--<button id="toggleButton" value='play'>Play</button>-->
+
+<h2 style="padding:40px;">Please click on the button below wait while you are transferred to an 
+online survey so that you can assess the experiment and your supervisor
+(the experimenter). This information will be saved separately and will not be
+ available to the experimenter.</h2>
+<h2 style="padding:40px;">When you have completed the survey, return to this window and click on the continue button which will then be visible.</h2>
+
+<!--<a href="https://umich.qualtrics.com/SE/?SID=SV_czRGPpNMOxzyEO9&subj=1" 
+onClick="return popup(this, 'Online')">Qualtrics Survey</a>-->
+  
+    </br></br><a href="https://schulich.co1.qualtrics.com/jfe/form/SV_6MqAtdghgAfnGzb" 
+onClick="return popup(this, 'Online')"></a>
+
+<button id="surveySubmit" 
+type="submit" name="qualcon1" onclick="return popup('https://schulich.co1.qualtrics.com/jfe/form/SV_6MqAtdghgAfnGzb' , 'Online');">
+Go to Survey</button>
+<form name="continueForm" method="post">
+    </br></br><input id="continueSubmit" type="submit" name="qualcon1" value="Continue">
+</form>
+</div>
+
+</body>
+
+<SCRIPT TYPE="text/javascript">
+<!--
+
+function popup(mylink, windowname)
+{
+
+
+if (! window.focus)return false;
+var href;
+if (typeof(mylink) == 'string')
+   href=mylink;
+else
+   href=mylink.href;
+window.open(href, windowname, 'width=800,height=600,scrollbars=yes');
+replybutton()
+return false;
+var form = getElementById('linkForm');
+
+}
+//-->
+//Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals 
+var time = 60;
+var boxUp = -1;
+var boxDown = 1;
+//var elem = document.getElementById("box"), speed = 10, currentPos = 600;
+var motionInterval = false;
+var wait = false;
+var msgs = '';
+var rating = Math.floor(Math.random() *1.5) + 5;
+var msg1 = '</br> We\'ve reviewed your response. Our rating of your performance is ' + rating + ' out of 7.';
+var msg2 = '</br> So again, good work!';
+//var boxOne = document.getElementById('box');
+
+
+	
+//INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT 
+function init()
+{
+//window.setInterval('updateClock()', 1000 );
+//window.setInterval('updateTimeLeft()', 1000 );
+//window.setTimeout('myFunction('+msg1+')', 3000);
+
+}
+// Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff 
+/*function updateClock()
+{
+var currentTime = new Date ( );
+var currentHours = currentTime.getHours ( );
+var currentMinutes = currentTime.getMinutes ( );
+var currentSeconds = currentTime.getSeconds ( );
+var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+currentMinutes = ( currentMinutes <10 ) ? "0" + currentMinutes  : currentMinutes;
+currentSeconds = ( currentSeconds <10 ) ? "0" + currentSeconds  : currentSeconds;
+
+var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+document.getElementById("clock").innerHTML = "Time: " + currentTimeString;
+}
+
+function updateTimeLeft()
+{
+var timeMin = (time - (time%60))/60;
+var timeSec = time % 60
+
+//document.getElementById("TimeLeft").innerHTML = "Time Left: " + time + ' Seconds';
+document.getElementById("TimeLeft").innerHTML = "Time Left: " +'</br>' + timeMin + ' Minutes ' + timeSec + ' Seconds';
+time=time-1;
+}*/
+//More Move function stuff More Move function stuff More Move function stuff More Move function stuff 
+
+function replybutton()
+{
+document.getElementById('continueSubmit').style.display = 'block';
+}
+
+document.getElementById('continueSubmit').onClick = function()
+	{
+	document.getElementById('continueSubmit').submit();
+	}
+
+</script>
+
+

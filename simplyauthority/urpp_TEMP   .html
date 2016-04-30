@@ -1,0 +1,83 @@
+<!-- saved from url=(0013)about:internet -->
+<style>body, table, { 
+            font: 18.6pt Arial; 
+            color: #000040;
+            background: #CCCCFF; 
+            margin: 50px; 
+            }
+
+input, textarea, select, submit  {
+            font: 18.6pt Arial; 
+            color: #004000;
+            margin-top: .33em}
+         
+input.radio, input.checkbox {
+            height:1em; width:1em}
+
+a, a:active, a:visited {color: #000040; text-decoration: underline}
+a:hover	{color: #004000}
+</style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body style="overflow:hidden" style="text-align:center"> 
+</br></br></br></br></br></br>
+ 
+ <form name="form" id="urppForm" method="post" style="text-align:center">
+  <h2>Please enter your URPP number in the space provided below and then press submit:</h2>
+
+	URPP Number:<br>
+	<div id="errorSpace" style="color:red;height:40px;"> </div>
+	
+	<!--real input box with name ml needs but js cant use, set to display none-->
+	<input type="text" id="urppText" name="urppcon1" style="display:none;"><br>
+	<input type="text" id="broText" name="bro"><br><!--proxy input box with a name that is useable-->
+</form>
+	
+    </br></br><button id="urppSubmit" onclick="numCheck()" style="font-size:20px;padding:10px;left:50%;position:absolute;">Submit</button>
+
+</body>
+
+<script>
+var form = document.getElementById('urppForm');
+var numbers = /\D/; 
+var errorMsg3 ="URPP number must be only numbers" +'</br>' + " URPP number must be 6 digits";
+var urppString = '';
+
+function numCheck(){
+urppString = form.bro.value;
+//console.log(urppString);
+document.getElementById('urppText').value = urppString;
+
+	if (numbers.test(urppString) && (urppString.length != 6)){
+		document.getElementById('errorSpace').innerHTML = errorMsg3;
+		//form.reset(); //reset off so user can see their errors
+		}
+	else if(numbers.test(urppString)){
+	document.getElementById('errorSpace').innerHTML = "URPP number must be only numbers";
+	//form.reset();
+	}
+	else if (urppString.length != 6){
+	document.getElementById('errorSpace').innerHTML = "URPP number must be 6 digits";
+	//form.reset();
+	}
+	
+	else{
+		form.submit();
+	}
+	
+
+	
+	
+		
+
+}
+
+
+</script>
+
+
+
+
+
+
+
+

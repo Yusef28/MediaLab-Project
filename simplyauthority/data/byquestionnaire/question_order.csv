@@ -1,0 +1,80 @@
+5,1,13:49:49,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que
+5,1,13:49:49,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que,inst,textbox1
+5,1,14:02:02,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que
+5,1,14:02:02,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que,inst,textbox1
+5,1,14:02:26,mytextbox.que
+5,1,14:02:26,mytextbox.que,inst,textbox1
+5,1,14:02:40,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que
+5,1,14:02:40,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que,textbox1,inst,textbox1,textbox1,textbox1,textbox1,textbox1,textbox1,textbox1,textbox1
+5,1,14:13:51,mytextbox.que
+5,1,14:13:51,mytextbox.que,inst,textbox1
+5,1,14:14:16,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que
+5,1,14:14:16,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que,box1,inst,box3,box4,box5,box6,box7,box8,box9,box10
+5,1,14:16:05,mytextbox.que
+5,1,14:16:05,mytextbox.que,inst,textbox1
+5,1,14:16:21,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que
+5,1,14:16:21,c:\medialab\samples\sample5 custom items\mytextbox1 - the basics\mytextbox.que,box1,inst,box3,box4,box5,box6,box7,box8,box9,box10
+5,1,14:32:01,mytextbox.que
+5,1,14:32:01,mytextbox.que,inst,textbox1
+5,1,14:58:54,mytextbox.que
+5,1,14:58:54,mytextbox.que,inst,textbox1
+1,1,15:45:07,mytextbox.que
+1,1,15:45:07,mytextbox.que,inst,textbox1
+1,1,18:43:28,mytextbox.que
+1,1,18:43:28,mytextbox.que,inst,textbox1
+1,1,19:39:25,mytextbox.que
+1,1,19:39:25,mytextbox.que,inst,inst2,text1,load1,feed1,next1,text2,done
+1,1,21:27:29,mytextbox.que
+1,1,21:27:29,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done
+1,1,21:30:48,mytextbox.que
+1,1,21:30:48,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done
+1,1,13:11:36,mytextbox.que
+1,1,13:11:36,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,13:20:18,mytextbox.que
+1,1,13:20:18,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:12:36,mytextbox.que
+1,1,20:12:36,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:35:19,mytextbox.que
+1,1,20:35:19,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:43:38,mytextbox.que
+1,1,20:43:38,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:46:48,mytextbox.que
+1,1,20:46:48,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:48:22,mytextbox.que
+1,1,20:48:22,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:53:13,mytextbox.que
+1,1,20:53:13,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,20:54:49,mytextbox.que
+1,1,20:54:49,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,19:36:57,mytextbox.que
+1,1,19:36:57,mytextbox.que,inst,inst2,text1,selfrating1,feed1,next1,text2,selfrating2,feed2,next2,text3,selfrating3,feed3,done,none
+1,1,18:01:45,mytextbox.que
+1,1,18:01:45,mytextbox.que,inst,inst2,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,none
+1,1,18:12:43,mytextbox.que
+1,1,18:12:43,mytextbox.que,inst,inst2,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,none
+1,1,18:13:03,mytextbox.que
+1,1,18:13:03,mytextbox.que,inst,inst2,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,none
+1,1,18:41:16,mytextbox.que
+1,1,18:41:16,mytextbox.que,inst,inst2,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,none
+1,1,18:54:41,mytextbox.que
+1,1,18:54:41,mytextbox.que,inst,inst2,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,end
+1,1,13:00:38,mytextbox.que
+1,1,13:00:38,mytextbox.que,inst,inst2,instr3,none,none,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,end
+1,1,13:09:37,mytextbox.que
+1,1,13:09:37,mytextbox.que,inst,inst2,instr3,none,none,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,end
+1,1,13:10:04,mytextbox.que
+1,1,13:10:04,mytextbox.que,inst,inst2,instr3,none,none,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,done,end
+1,1,13:15:03,mytextbox.que
+1,1,13:15:03,mytextbox.que,inst,inst2,instr3,practice,inst4,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,qual,end
+1,1,13:55:12,mytextbox.que
+1,1,13:55:12,mytextbox.que,inst,inst2,instr3,practice,inst4,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,qual,end
+1,1,21:06:12,mytextbox.que
+1,1,21:06:12,mytextbox.que,inst,inst2,instr3,practice,inst4,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,qual,end
+1,1,14:19:44,mytextbox.que
+1,1,14:19:44,mytextbox.que,inst,inst2,urp,instr3,practice,inst4,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,qual,end
+1,2,14:25:23,mytextbox2.que
+1,2,14:25:23,mytextbox2.que,inst,inst2,urpp,instr3,practice,inst4,text1,selfrating1,feed1,wait,next1,text2,selfrating2,feed2,wait2,next2,text3,selfrating3,feed3,wait3,qual,end
+1,2,14:39:53,mytextbox2.que
+1,2,14:39:53,mytextbox2.que,instcon2,inst2con2,urppcon2,instr3con2,practicecon2,inst4con2,text1con2,selfrating1con2,feed1con2,waitcon2,next1con2,text2con2,selfrating2con2,feed2con2,wait2con2,next2con2,text3con2,selfrating3con2,feed3con2,wait3con2,qualcon2,endcon2
+1,1,15:39:02,mytextbox.que
+1,1,15:39:02,mytextbox.que,instcon1,inst2con1,urppcon1,instr3con1,practicecon1,inst4con1,text1con1,selfrating1con1,feed1con1,waitcon1,next1con1,text2con1,selfrating2con1,feed2con1,wait2con1,next2con1,text3con1,selfrating3con1,feed3con1,wait3con1,qualcon1,endcon1

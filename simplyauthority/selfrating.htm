@@ -1,0 +1,127 @@
+<!-- saved from url=(0013)about:internet -->
+<style><ml.styles></style>
+<link rel="stylesheet" type="text/css" href="styles.css">
+<body style="overflow:hidden"> 
+<ml.wording>
+<!--<h2 style="text-align:center">Rate your own performance</h2>-->
+</br></br>
+  <form name="form" class="rating" method="post">
+	<h2>Please rate your performance on the task just completed, from 1 - 7 </br>(7 being the best)</h3>
+	</br>
+  	<select name="<ml.varname>_01" class="select">
+      <option value="1">1</option>
+	  <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+	</br></br></br>
+	<h2>Please rate your confidence on this rating, from 1 - 7 </br>(7 being the most confident)</h3>
+	</br>
+	<select name="<ml.varname>_02" class="select1">
+      <option value="1">1</option>
+	  <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+    </select>
+	</br></br></br></br></br>
+
+	<input type='submit' name='Submit'  class="ratesubmit" value='Submit' />
+</form>
+<!--<div id="clock"></div>
+<div id="TimeLeft"></div>
+<button id="toggleButton" value='play'>Play</button>-->
+
+
+
+</div>
+</body>
+<!--<script>
+
+//Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals Globals 
+var time = 30;
+var boxUp = -1;
+var boxDown = 1;
+//var elem = document.getElementById("box"), speed = 10, currentPos = 600;
+var motionInterval = false;
+var wait = false;
+var msgs = '';
+
+var msg1 = '</br>Melinda: Could you please hurry up. You are really slow...';
+var msg2 = '</br>Melinda: Ok whatever just hurry please.';
+
+
+//INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT INIT 
+function init()
+{
+
+window.setInterval('updateClock()', 1000 );
+window.setInterval('updateTimeLeft()', 1000 );
+//window.setTimeout('myFunction('+msg1+')', 3000);
+/*window.setTimeout(function() {
+		myFunction(msg1) 
+		}, 3000);
+
+window.setTimeout(function() {
+		myFunction(msg2) 
+		}, 7000);*/
+}
+// Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff Time Stuff 
+function updateClock()
+{
+var currentTime = new Date ( );
+var currentHours = currentTime.getHours ( );
+var currentMinutes = currentTime.getMinutes ( );
+var currentSeconds = currentTime.getSeconds ( );
+var timeOfDay = ( currentHours < 12 ) ? "AM" : "PM";
+currentHours = ( currentHours > 12 ) ? currentHours - 12 : currentHours;
+currentHours = ( currentHours == 0 ) ? 12 : currentHours;
+currentMinutes = ( currentMinutes <10 ) ? "0" + currentMinutes  : currentMinutes;
+currentSeconds = ( currentSeconds <10 ) ? "0" + currentSeconds  : currentSeconds;
+var currentTimeString = currentHours + ":" + currentMinutes + ":" + currentSeconds + " " + timeOfDay;
+document.getElementById("clock").innerHTML = "Time: " + currentTimeString;
+}
+
+function updateTimeLeft()
+{
+var timeMin = (time - (time%60))/60;
+var timeSec = time % 60
+
+//document.getElementById("TimeLeft").innerHTML = "Time Left: " + time + ' Seconds';
+document.getElementById("TimeLeft").innerHTML = "Time Left: " +'</br>' + timeMin + ' Minutes ' + timeSec + ' Seconds';
+time=time-1;
+}
+
+//More Move function stuff More Move function stuff More Move function stuff More Move function stuff 
+function myFunction(m)
+{
+msgs = msgs + m;
+document.getElementById('message').innerHTML = msgs;
+if(wait==false && boxDown==1)
+	{
+	move();
+	}
+}
+function unHide()
+{
+if(wait==false && boxDown==1)
+	{
+	//document.getElementById('message').style.backgroundColor = 'white';
+	move();
+	}
+}
+
+</script>-->
+
+
+
+
+
+
+
+
